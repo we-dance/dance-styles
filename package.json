@@ -15,8 +15,6 @@
   "private": false,
   "scripts": {
     "db": "node db.js",
-    "lambda": "netlify-lambda build json-server",
-    "build": "npm run db && npm run lambda",
     "start": "npm run db && node server-local.js"
   },
   "dependencies": {
