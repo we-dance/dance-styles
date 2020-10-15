@@ -14,7 +14,14 @@
   ],
   "private": false,
   "scripts": {
-    "sourcy": "sourcy"
+    "sourcy": "sourcy",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "js-yaml": "^3.14.0",
+    "json-server": "^0.16.2",
+    "require-all": "^3.0.0"
   },
   "devDependencies": {
     "@razbakov/sourcy": "1.*"
