@@ -1,0 +1,22 @@
+{
+  "name": "dance-styles",
+  "version": "1.0.0",
+  "description": "API for dances with relations, properties, descriptions and translations",
+  "main": "index.js",
+  "repository": "git@github.com:we-dance/dance-styles.git",
+  "author": "Aleksey Razbakov <aleksey@razbakov.com>",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "private": false,
+  "scripts": {
+    "sourcy": "sourcy"
+  },
+  "devDependencies": {
+    "@razbakov/sourcy": "1.*"
+  }
+}
