@@ -3,7 +3,7 @@ const fs = require("fs");
 const yaml = require("js-yaml");
 
 const directoryPath = path.join(__dirname, "content");
-const dbPath = path.join(__dirname, "db.json");
+const dbPath = path.join(__dirname, "json-server", "db.json");
 
 const data = { styles: [] };
 
@@ -29,20 +29,5 @@ fs.readdir(directoryPath, function (err, files) {
     }
 
     console.log("db exported");
-
-    console.log("starting server");
-
-    const jsonServer = require("json-server");
-    const server = jsonServer.create();
-    const router = jsonServer.router("db.json");
-    const middlewares = jsonServer.defaults();
-    const port = process.env.PORT || 3000;
-
-    server.use(middlewares);
-    server.use(router);
-
-    server.listen(port);
-
-    console.log("server started at port " + port);
   });
 });

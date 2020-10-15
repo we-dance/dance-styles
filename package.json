@@ -14,8 +14,10 @@
   ],
   "private": false,
   "scripts": {
-    "sourcy": "sourcy",
-    "start": "node server.js"
+    "db": "node db.js",
+    "lambda": "netlify-lambda build json-server",
+    "build": "npm run db && npm run lambda",
+    "start": "npm run db && node server-local.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
@@ -24,6 +26,9 @@
     "require-all": "^3.0.0"
   },
   "devDependencies": {
-    "@razbakov/sourcy": "1.*"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.1",
+    "serverless-http": "^2.6.0"
   }
 }
