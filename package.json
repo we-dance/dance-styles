@@ -15,7 +15,7 @@
   "private": false,
   "scripts": {
     "db": "node db.js",
-    "start": "node run db && node index.js"
+    "start": "npm run db && node index.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",

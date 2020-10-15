@@ -3,7 +3,7 @@ const fs = require("fs");
 const yaml = require("js-yaml");
 
 const directoryPath = path.join(__dirname, "content");
-const dbPath = path.join(__dirname, "json-server", "db.json");
+const dbPath = path.join(__dirname, "db.json");
 
 const data = { styles: [] };
 
